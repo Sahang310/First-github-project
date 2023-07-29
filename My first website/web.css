@@ -1,3 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 *{
-    c
+    /* background-color: #aeadad; */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #abffe6;
+}
+.logo{
+    width: 300px;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+    padding-left: 24px;
+}
+a{
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+/* 
+
+Hero
+
+*/
+
+.header{
+    background-color: #eadcff;
+    height: calc(100vh - 70px);
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+h1{
+    font-size: 72px;
+}
+.subheader{
+    font-size: 36px;
+    padding: 16px 0 24px 0;
+}
+.button{
+    background-color: #33b7d4;
+    color: white;
+    padding: 8px 16px;    
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.raw{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about,
+#discord,
+#contact{
+    padding: 48px 0 ;
+}
+
+/* 
+
+About  
+
+*/
+
+#about{
+    background-color: #f8ffdc;
+}
+h2{
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 24px;
+}
+.section__description{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.about__img--wrapper{
+    width: 40%;
+}
+img{
+    width: 100%;
+}
+.section__description--wrapper{
+    width: 60%;
+}
+.section__description--wrapper,
+.about__img--wrapper{
+    padding: 0 24px ;
+
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.5 ;
+}
+
+/* 
+
+Discord  
+
+*/
+
+#discord{
+    background-color: #cefeff;
+}
+
+/* 
+
+Contact  
+
+*/
+
+#contact{
+    background-color: #dce9ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form{
+    width: 100%;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+   
+    margin: 0 auto;
 }
