@@ -54,7 +54,7 @@ h1{
     font-size: 36px;
     padding: 16px 0 24px 0;
 }
-.button{
+button{
     background-color: #33b7d4;
     color: white;
     padding: 8px 16px;    
@@ -65,6 +65,7 @@ h1{
 .raw{
     width: 100%;
     max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +73,8 @@ h1{
 
 #about,
 #discord,
-#contact{
+#contact,
+footer{
     padding: 48px 0 ;
 }
 
@@ -109,8 +111,7 @@ img{
     padding: 0 24px ;
 
 }
-
-p{
+.section__description--para{
     font-size: 20px;
     line-height: 1.5 ;
 }
@@ -133,15 +134,112 @@ Contact
 
 #contact{
     background-color: #dce9ff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 form{
     width: 100%;
-    min-width: 600px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
-   
     margin: 0 auto;
+    padding: 0 16px;
+
+}
+input,
+textarea{
+    font-size: 20px;
+    padding: 6px 12px;
+}
+textarea {
+    height: 190px;
+    margin-bottom: 24px;
+
+  }
+
+/* 
+
+Footer 
+
+*/
+
+footer{
+    background-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__logo{
+    max-width: 480px;
+}
+.footer__links{
+    margin: 16px 0 32px 0 ;
+
+}
+.footer__link{
+    margin: 0 16px;
+}
+
+/* Small Phones, Tablets, large Samrtphones */
+@media (max-width: 728px){
+    .raw{
+        flex-direction: column;
+    }
+    .home__description{
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    h1{
+        font-size: 52px;
+        text-align: center;
+    }
+    .subheader{
+        font-size: 24px;
+        text-align: center;
+        padding: 16px 0 24px 0;
+    }
+    .home__description--button{
+        text-align: center;
+        max-width: 240px;
+    }
+    ul{
+        display: none;
+    }
+    .section__description{
+        flex-direction: column;
+        
+    }
+    .section__description--wrapper{
+       width: 100%;
+       margin-bottom: 24px;
+    }
+    .section__description--para{
+        font-size: 16px;
+    }
+    .about__img--wrapper{
+        width: 100%;
+    }
+    #discord .section__description{
+        flex-direction: column-reverse;
+    }
+    .footer__logo{
+        width: 100%;
+    }
+    h2{
+        font-size: 32px;
+    }
+    footer{
+        padding: 48px 24px;
+    }
+    .footer__link{
+        padding: 0 4px;
+        font-size: 18px;
+        margin: 0;
+    }
+    .footer__links{
+        margin-bottom: 24px;
+    }
+    
+
 }
